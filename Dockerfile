@@ -8,4 +8,5 @@ COPY entrypoint.sh /django
 
 RUN pip3 install --no-cache-dir -r requirements.txt
 
-ENTRYPOINT ["sh", "entrypoint.sh"]
+#ENTRYPOINT ["sh", "entrypoint.sh"]
+CMD sh entrypoint.sh 
